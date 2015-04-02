@@ -1,0 +1,55 @@
+<!-- /**
+ * Created by sxpandu on 3/30/2015.
+ */
+/*
+The view for the sign up page and form.
+ */
+ -->
+
+
+<div ng-controller="signUpFormController" class="container-fluid">
+    <div  class="row">
+        <div class="col-md-6">
+        <form name="userContactInfoForm" id="userContactInfoForm" ng-submit="submit();" novalidate>
+                <div form-element>
+                    <label for ="userName">Desired Username</label>
+                    <input type="text" id="userName" name="userName" ng-model="userContactInfo.userName"
+                           placeholder="Desired Username" ng-required="true" minlength="8"/>
+
+                </div>
+                <div form-element>
+                    <label for ="password">Password</label>
+                    <input type="password" id="password" name="password" ng-model="userContactInfo.password"
+                           placeholder="Enter a password" />
+
+                </div>
+                <div form-element>
+                    <label for ="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" ng-model="userContactInfo.confirmPassword"
+                           placeholder="Confirm the password"  />
+
+                </div>
+                <div form-element>
+                    <label for ="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" ng-model="userContactInfo.firstName"
+                           placeholder="Enter your First Name" />
+                </div>
+                <div form-element>
+                    <label for ="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" ng-model="userContactInfo.lastName"
+                           placeholder="Enter your Last Name" />
+                </div>
+                <input type="submit" value="Submit" class="btn btn-lg btn-primary" />
+        </form>
+
+        </div>
+        <div class="col-md-6">
+            <pre>{{userContactInfoForm | json}}</pre>
+
+        </div>
+
+    </div>
+
+
+
+</div>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>InstaLink</title>
+
+    <!-- Bootstrap -->
+    <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/ctlHeader.css" rel="stylesheet"/>
+    <link href="styles/main.css" rel="stylesheet"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-app="myApp" class="ilink">
+<ctl-header></ctl-header>
+<work-spinner>
+    <div class="loading-layer"></div><div class="loader-container"><img src="images/spinner_large.gif"/></div>
+</work-spinner>
+
+<div ng-view>
+</div>
+
+
+
+
+<ctl-footer></ctl-footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="components/jquery/jquery-1.11.2.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="components/bootstrap/js/bootstrap.min.js"></script>
+<script src="components/angular/angular.min.js"></script>
+<script src="components/angular/angular-route.min.js"></script>
+<script src="components/angular/angular-messages.min.js"></script>
+<script src="app.js"></script>
+<script src="scripts/interceptors/requestCounterInterceptor.js"></script>
+<script src="scripts/directives/ctlHeader.js"></script>
+<script src="scripts/directives/workSpinner.js"></script>
+<script src="scripts/decorators/bindingDebug.js"></script>
+<script src="scripts/services/userContactInfo.js"></script>
+<script src="scripts/controllers/signUpFormController.js"></script>
+<script src="scripts/controllers/resultController.js"></script>
+<script src="scripts/directives/formElement.js"></script>
+
+</body>
+</html>

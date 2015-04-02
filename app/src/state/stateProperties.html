@@ -1,0 +1,75 @@
+<div ng-controller="statePropertiesController">
+
+    <div class="container" >
+        <div class="row well">
+            <div ng-repeat="states in statesArray">
+                 <span ng-if="state == states.code ">
+                    <span ng-repeat="prop in states.properties">
+                        <div class="col-md-3">
+                            <div class="panel panel-success thumbnail">
+                                <img ng-src="{{prop.image}}" alt="{{prop.image}}">
+                                <div class="panel-body">
+                                </div>
+                                <div class="panel-footer"><a href=""  ng-click="redirectTo()"> {{prop.link}} </a></div>
+                            </div>
+                        </div>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <div class="row well">
+            <div class="col-md-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">New Customer Signup</h3>
+                    </div>
+                    <div class="panel-body">
+                        Please select your property from the options above. <span class="glyphicon glyphicon-arrow-up"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Signin form</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-default iLinkBtn-green">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+
+

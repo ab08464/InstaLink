@@ -1,0 +1,14 @@
+.ctl-logo{
+    display: block;
+    padding: 15px 10px;
+}
+.ctl-logo>div{
+    background: url("/Instalink/app/images/sprite.png");
+    background-size: 155px auto;
+    background-position: 0 97px;
+    width: 150px;
+    height: 32px;
+}
+.navbar-default{
+    background: transparent;
+}
