@@ -6,10 +6,10 @@
                  <span ng-if="state == states.code ">
                     <span ng-repeat="prop in states.properties">
                         <div class="col-md-3">
-                            <div class="panel panel-success thumbnail">
-                                <img ng-src="{{prop.image}}" alt="{{prop.image}}">
+                            <div class="panel panel-success">
+                                <img ng-src="{{prop.image}}" class="img-responsive"alt="{{prop.image}}">
                                 <div class="panel-body">
-                                </div>
+                                </div> Hi
                                 <div class="panel-footer"><a href=""  ng-click="redirectTo()"> {{prop.link}} </a></div>
                             </div>
                         </div>
